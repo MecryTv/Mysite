@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="container navbar-container">
+    <div class="logo">
+      <a routerLink="/" class="logo-text">MecryTv <span class="text-gradient">Portfolio</span></a>
+    </div>
+
+    <div class="nav-links" [class.active]="isMenuOpen">
+      <ul>
+        <li><a href="#home" (click)="toggleMenu()" class="nav-link">Home</a></li>
+        <li><a href="#about" (click)="toggleMenu()" class="nav-link">About Me</a></li>
+        <li><a href="#skills" (click)="toggleMenu()" class="nav-link">Skills</a></li>
+        <li><a href="#projects" (click)="toggleMenu()" class="nav-link">Projects</a></li>
+        <li><a href="#contact" (click)="toggleMenu()" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="hamburger" (click)="toggleMenu()">
+      <span [class.active]="isMenuOpen"></span>
+      <span [class.active]="isMenuOpen"></span>
+      <span [class.active]="isMenuOpen"></span>
+    </div>
+  </div>
+</nav>
+
